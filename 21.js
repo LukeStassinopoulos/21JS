@@ -68,8 +68,6 @@ function startGame() {
         document.getElementById("player-cards").append(cardImg);
 
     }
-    //update player current count
-    document.getElementById("player-sum").innerText = reduceAce(playerSum, playerAceCount);
     //if 21 achieved player should stand
     if (playerSum == 21) {
         haveStood = true;
@@ -103,7 +101,6 @@ function hit() {
         haveStood = true;
         stand()
     }
-    document.getElementById("player-sum").innerText = reduceAce(playerSum, playerAceCount);
 }
 //Dealer draws until card count is over 17
 function stand() {

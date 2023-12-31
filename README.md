@@ -11,7 +11,6 @@ to better replicate real life 21
 -Dealer draws after player to better replicate real life
 21 
 (dealer stops drawing when reaching total of 17 or higher)
-- Displayed counter at all times of player total
 -If player achieves 21 through blackjack or other means
 automatically stands
 -Renamed variables for easier understanding
