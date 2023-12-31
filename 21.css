@@ -1,9 +1,11 @@
 /* The following css adjusts fonts and the sizes of cards and buttons */
+/* Also changes background color of the page *
 /* The titles present are the id's of the associated div */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    background-color:#478559
 }
 
 #dealer-cards img{

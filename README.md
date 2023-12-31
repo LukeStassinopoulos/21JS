@@ -16,3 +16,4 @@ to better replicate real life 21
 automatically stands
 -Renamed variables for easier understanding
 -Included comments for learning purposes
+-Changed Background colour of website

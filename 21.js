@@ -72,10 +72,11 @@ function startGame() {
     document.getElementById("player-sum").innerText = reduceAce(playerSum, playerAceCount);
     //if 21 achieved player should stand
     if (playerSum == 21) {
+        haveStood = true;
         stand();
     }
     //activate buttons
-    document.getElementById("hit") / addEventListener("click", hit);
+    document.getElementById("hit").addEventListener("click", hit);
     document.getElementById("stand").addEventListener("click", stand)
     document.getElementById("play-again").addEventListener("click", playAgain)
 }
@@ -121,6 +122,8 @@ function stand() {
 
 //Displays if player won or lost
 function results() {
+    document.getElementById("hit").removeEventListener("click", hit);
+    document.getElementById("stand").removeEventListener("click", stand);
     document.getElementById("hidden").src = "./cards/" + hidden + ".png";
     dealerSum = reduceAce(dealerSum, dealerAceCount);
     playerSum = reduceAce(playerSum, playerAceCount);
